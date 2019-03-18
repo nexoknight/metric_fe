@@ -10,7 +10,8 @@ axios.interceptors.request.use(
   error => Promise.reject(error)
 )
 
-const path = 'http://t2ru-crmdev-05:14880'
+// backend endpoint
+const path = 'http://some-address'
 
 export const fetchData = (payload) => {
   return axios.get(`${path}/allIntegrationOnlyBilling`, { params: payload })
